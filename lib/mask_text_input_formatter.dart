@@ -60,6 +60,8 @@ class MaskTextInputFormatter implements TextInputFormatter {
 
   /// Check if target mask is filled
   bool isFill() {
+      print(_resultTextArray.length);
+    print(_maskLength);
     return _resultTextArray.length == _maskLength;
   }
 
