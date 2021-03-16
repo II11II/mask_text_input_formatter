@@ -76,7 +76,11 @@ class MaskTextInputFormatter implements TextInputFormatter {
   String maskText(String text) {
     return MaskTextInputFormatter(mask: _mask, filter: _maskFilter, initialText: text).getMaskedText();
   }
-
+   void insertMaskedText(String text) {
+  
+    _resultTextArray.set(text);
+  
+  }
   /// Unmask some text
   String unmaskText(String text) {
     return MaskTextInputFormatter(mask: _mask, filter: _maskFilter, initialText: text).getUnmaskedText();
